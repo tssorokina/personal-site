@@ -10,7 +10,7 @@ const degrees = [
     degree: 'Bachelor of Economics and Statistics (Minor in Data Science)',
     link: 'https://www.hse.ru/en/ba/stat/',
     year: 2019-2023,
-  }
+  },
   {
     school: 'École nationale de la statistique et de l''administration économique (ENSAE Paris)',
     degree: '2nd year of engineering cycle',
