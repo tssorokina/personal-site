@@ -6,34 +6,36 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      "Tatiana Sorokina's personal CV website. Paris-based mathematics master's student with research and industry experience in quantitative finance, AI, and risk management."
     }
   >
     <article className="post" id="index">
       <header>
         <div className="title">
           <h2>
-            <Link to="/">About this site</Link>
+            <Link to="/">Welcome</Link>
           </h2>
           <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
+            Personal site and CV of Tatiana Sorokina – Quantitative Finance and AI Research
           </p>
         </div>
       </header>
       <p>
-        {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">projects</Link>,{' '}
-        view <Link to="/stats">site statistics</Link>, or{' '}
-        <Link to="/contact">contact</Link> me.
+        I’m Tatiana, a final-year mathematics master’s student based in Paris with experience in
+        quantitative research, financial risk modeling, and deep learning. I’m currently looking
+        for opportunities at the intersection of quantitative research and AI in financial markets,
+        starting in <strong>November 2025</strong>.
       </p>
       <p>
-        {' '}
-        Source available{' '}
-        <a href="https://github.com/mldangelo/personal-site">here</a>.
+        You can view my full <Link to="/resume">resume</Link>, or{' '}
+        <Link to="/contact">get in touch</Link>.
+      </p>
+      <p>
+        This website was built using React and is adapted from an open-source template. The original
+        source is available{' '}
+        <a href="https://github.com/tssorokina/personal-site" target="_blank" rel="noreferrer">
+          here
+        </a>.
       </p>
     </article>
   </Main>

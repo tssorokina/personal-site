@@ -9,12 +9,12 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="Tatiana Sorokina" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>Tatiana Sorokina</h2>
         <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+          <a href="mailto:tssorokina@edu.hse.ru">tssorokina@edu.hse.ru</a>
         </p>
       </header>
     </section>
@@ -22,23 +22,21 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hello, I&apos;m Tatiana. I am a final year Mathematics Master&apos;s student with a strong foundation in
+        financial mathematics, risk management, and macroeconomic modeling. I'm seeking opportunities in
+        Quantitative or AI Research in Financial Markets starting November 2025.
+        My experience spans quantitative research, credit risk analysis, teaching, and deep learning applications
+        in finance.
       </p>
       <ul className="actions">
         <li>
           {!window.location.pathname.includes('/resume') ? (
             <Link to="/resume" className="button">
-              Learn More
+              View Resume
             </Link>
           ) : (
-            <Link to="/about" className="button">
-              About Me
+            <Link to="/" className="button">
+              Home
             </Link>
           )}
         </li>
@@ -48,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; Tatiana Sorokina. <Link to="/">tssorokina.dev</Link>
       </p>
     </section>
   </section>
