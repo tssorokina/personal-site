@@ -4,7 +4,7 @@
   "homepage": "tssorokina.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tssorokina.github.io"
+    "url": "https://github.com/tssorokina/personal-site.git"
   },
   "engines": {
     "node": ">=16.x"
