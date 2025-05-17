@@ -9,27 +9,27 @@ const courses = [
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',
   },
-    {
+  {
     title: 'Probability and Statistics for Data Science',
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',
   },
-    {
+  {
     title: 'Advanced Analysis',
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',
   },
-    {
+  {
     title: 'Computational Data Science (Python)',
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',
   },
-    {
+  {
     title: 'Markets and Incentives: a historical-theoretical perspective',
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',
   },
-    {
+  {
     title: 'Market Power and Regulation',
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     university: 'TSE',

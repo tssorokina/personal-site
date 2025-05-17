@@ -22,6 +22,10 @@ Education.propTypes = {
       degree: PropTypes.string,
       link: PropTypes.string,
       year: PropTypes.number,
+      description: PropTypes.string,
+      location: PropTypes.string,
+      gpa: PropTypes.string,
+      gpa_scale: PropTypes.string,
     }),
   ),
 };

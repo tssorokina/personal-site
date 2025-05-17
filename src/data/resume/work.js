@@ -21,7 +21,7 @@ const work = [
     highlights: [
       'Developpment of a GNN-based model for portfolio volatility hedging during earnings publication period.',
     ],
-  }
+  },
 ];
 
 export default work;

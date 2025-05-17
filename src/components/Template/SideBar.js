@@ -7,7 +7,7 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="Tatiana Sorokina" />
+        <img src={`${PUBLIC_URL}/images/me.png`} alt="Tatiana Sorokina" />
       </Link>
       <header>
         <h2>Tatiana Sorokina</h2>
@@ -20,11 +20,11 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hello, I&apos;m Tatiana. I am a final year Mathematics Master&apos;s student with a strong foundation in
-        financial mathematics, risk management, and macroeconomic modeling. I'm seeking opportunities in
-        Quantitative or AI Research in Financial Markets starting November 2025.
-        My experience spans quantitative research, credit risk analysis, teaching, and deep learning applications
-        in finance.
+        Hello, I&apos;m Tatiana. I am a final year Mathematics Master&apos;s student with a strong
+        foundation in financial mathematics, risk management, and macroeconomic modeling. I&apos;m
+        seeking opportunities in Quantitative or AI Research in Financial Markets starting November
+        2025. My experience spans quantitative research, credit risk analysis, teaching, and deep
+        learning applications in finance.
       </p>
       <ul className="actions">
         <li>

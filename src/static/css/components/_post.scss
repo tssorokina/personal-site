@@ -90,17 +90,6 @@
     .actions {
       @include vendor("flex-grow", "1");
     }
-
-        .icon {
-          border-bottom: 0;
-
-          &:before {
-            color: _palette(border);
-            margin-right: 0.75em;
-          }
-        }
-      }
-    }
   }
 
   @include breakpoint(medium) {
@@ -227,6 +216,14 @@
       @include vendor("align-items", "stretch");
       @include vendor("flex-direction", "column-reverse");
 
+      .stats {
+        text-align: center;
+
+        li {
+          margin: 0 0 0 1.25em;
+          padding: 0 0 0 1.25em;
+        }
+      }
     }
   }
 }
