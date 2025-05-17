@@ -46,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Tatiana Sorokina. <Link to="/">tssorokina.dev</Link>
+        &copy; Tatiana Sorokina.
       </p>
     </section>
   </section>
