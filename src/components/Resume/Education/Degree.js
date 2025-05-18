@@ -22,9 +22,16 @@ const Degree = ({ data }) => (
         </p>
       )}
     </header>
-    {data.description && (
+    {/* {data.description && (
       <p className="degree-description">{data.description}</p>
-    )}
+    )} */}
+    {data.description ? (
+      <ul className="points">
+        {data.description.map((highlight) => (
+          <li key={highlight}>{highlight}</li>
+        ))}
+      </ul>
+    ) : null}
   </article>
 );
 
@@ -37,7 +44,7 @@ Degree.propTypes = {
     location: PropTypes.string,
     gpa: PropTypes.string,
     gpa_scale: PropTypes.string,
-    description: PropTypes.string,
+    description: PropTypes.arrayOf(PropTypes.string.isRequired),
   }).isRequired,
 };
 

@@ -31,15 +31,6 @@ const data = [
       + 'researched neural-network methods for parameter identification in non-linear HANK frameworks.',
   },
   {
-    title: 'Research Internship in Computational Economics',
-    subtitle: 'CREST (Centre for Research in Economics and Statistics), with Pablo Winant',
-    start_date: '2022-06-01',
-    end_date: '2022-08-31',
-    desc:
-      'Extended deep-learning methods for solving dynamic economic models (TensorFlow, JAX); '
-      + 'reviewed theoretical frameworks for ML in Computational Economics, contributing to article in a top-10 journal.',
-  },
-  {
     title: 'Monetary Policy Effectiveness with NLP',
     subtitle: 'HSE, Faculty of Economic Sciences (supervisor: Mariam Mamedli)',
     start_date: '2022-01-01',
