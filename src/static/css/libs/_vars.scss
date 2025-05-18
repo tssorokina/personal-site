@@ -19,38 +19,112 @@ $size: (
 );
 
 // Font.
+// $font: (
+//   family: (
+//     "Source Sans Pro",
+//     Helvetica,
+//     sans-serif,
+//   ),
+//   family-fixed: (
+//     "Courier New",
+//     monospace,
+//   ),
+//   family-heading: (
+//     "Raleway",
+//     Helvetica,
+//     sans-serif,
+//   ),
+//   weight: 400,
+//   weight-bold: 700,
+//   weight-heading: 400,
+//   weight-heading-bold: 800,
+//   weight-heading-extrabold: 900,
+//   kerning-heading: 0.25em,
+// );
+
 $font: (
   family: (
-    "Source Sans Pro",
-    Helvetica,
-    sans-serif,
+    "Financier Text",
+    Georgia,
+    "Times New Roman",
+    serif
   ),
   family-fixed: (
     "Courier New",
-    monospace,
+    monospace
   ),
   family-heading: (
-    "Raleway",
-    Helvetica,
-    sans-serif,
+    "Financier Display",
+    Georgia,
+    serif
   ),
-  weight: 400,
-  weight-bold: 700,
-  weight-heading: 400,
-  weight-heading-bold: 800,
-  weight-heading-extrabold: 900,
-  kerning-heading: 0.25em,
+  weight: 400,               // Financier Text regular
+  weight-bold: 700,          // Financier Text bold
+  weight-heading: 400,       // Financier Display regular
+  weight-heading-bold: 800,  // Financier Display semibold
+  weight-heading-extrabold: 900, // Financier Display bold/black
+  kerning-heading: 0.1em
 );
 
-// Palette.
-$palette: (
-  bg: #ffffff,
-  bg-alt: #f4f4f4,
-  fg: #646464,
-  fg-bold: #3c3b3b,
-  fg-light: #aaaaaa,
-  border: rgba(160, 160, 160, 0.3),
-  border-bg: rgba(160, 160, 160, 0.075),
-  border-alt: rgba(160, 160, 160, 0.65),
-  accent: #2e59ba,
+// Optional: a UI sans stack for non-editorial elements
+$font-ui: (
+  "Metric",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif
 );
+
+
+
+// Palette.
+// $palette: (
+//   bg: #ffffff,
+//   bg-alt: #f4f4f4,
+//   fg: #646464,
+//   fg-bold: #3c3b3b,
+//   fg-light: #aaaaaa,
+//   border: rgba(160, 160, 160, 0.3),
+//   border-bg: rgba(160, 160, 160, 0.075),
+//   border-alt: rgba(160, 160, 160, 0.65),
+//   accent: #2e59ba,
+// );
+
+// $palette: (
+//   bg:        #f0ede3,                    // soft ivory
+//   bg-alt:    #e1d8c7,                    // pale beige
+//   fg:        #5A4A3A,                    // warm espresso
+//   fg-bold:   #3C2F24,                    // deep chocolate
+//   fg-light:  #A69381,                    // taupe gray
+//   border:    rgba(90, 74, 58, 0.3),
+//   border-bg: rgba(90, 74, 58, 0.075),
+//   border-alt:rgba(90, 74, 58, 0.65),
+//   accent:    #8B0000                     // dark burgundy
+// );
+
+// $palette: (
+//   bg:        #F5F5F5,                    // light greige
+//   bg-alt:    #E0DFDD,                    // soft greige
+//   fg:        #4E4D4B,                    // warm charcoal
+//   fg-bold:   #2C2B2A,                    // deep slate
+//   fg-light:  #8F8E8D,                    // mid-tone grey
+//   border:    rgba(78, 77, 75, 0.3),
+//   border-bg: rgba(78, 77, 75, 0.075),
+//   border-alt:rgba(78, 77, 75, 0.65),
+//   accent:    #800020                     // rich burgundy
+// );
+
+$palette: (
+  bg:        #F7F8F9,                    // bright cool-white
+  bg-alt:    #EBEDF0,                    // pale stone
+  fg:        #5C5F66,                    // steel grey
+  fg-bold:   #2B2E33,                    // deep graphite
+  fg-light:  #A7AAB0,                    // light mist
+  border:    rgba(92, 95, 102, 0.3),
+  border-bg: rgba(92, 95, 102, 0.075),
+  border-alt:rgba(92, 95, 102, 0.65),
+  accent:    #76223F                     // deep berry
+);
+
+
+
