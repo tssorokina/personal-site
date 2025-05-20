@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Redirect all 404s to index.html and preserve the path
+      var l = window.location;
+      window.location.replace(
+        "/" +
+          "#"
+          + l.pathname
+          + l.search
+          + l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
