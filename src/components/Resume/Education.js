@@ -18,20 +18,25 @@ const Education = ({ data }) => (
 Education.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      school: PropTypes.string,
-      degree: PropTypes.string,
+      school: PropTypes.string.isRequired,
+      degree: PropTypes.string.isRequired,
       link: PropTypes.string,
-      year: PropTypes.number,
-      description: PropTypes.string,
+      year: PropTypes.string,
+      description: PropTypes.arrayOf(
+        PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.shape({
+            text: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired,
+            title: PropTypes.string,
+          }),
+        ]),
+      ),
       location: PropTypes.string,
       gpa: PropTypes.string,
       gpa_scale: PropTypes.string,
     }),
-  ),
-};
-
-Education.defaultProps = {
-  data: [],
+  ).isRequired,
 };
 
 export default Education;

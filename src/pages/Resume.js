@@ -25,14 +25,15 @@ const sections = {
 
 const Resume = () => (
   <Main
-    title="Resume"
-    description="Tatiana Sorokina's CV cite"
+    title="Curriculum Vitae"
+    description="Tatiana Sorokina's CV website. Paris-based mathematics master's student with research and industry experience in quantitative finance, AI, and risk management."
+    keywords="CV, resume, curriculum vitae, tatiana sorokina, mathematics, finance, AI, research"
   >
     <article className="post" id="resume">
       <header>
         <div className="title">
           <h2>
-            <Link to="resume">Resume</Link>
+            <Link to="resume">Curriculum Vitae</Link>
           </h2>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (

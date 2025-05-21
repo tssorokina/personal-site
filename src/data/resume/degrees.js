@@ -9,7 +9,9 @@ const data = [
     gpa: '15.0',
     gpa_scale: '20.0',
     description: [
-      'Fully-covered tuition fees; merit-based Eiffel Excellence Scholarship; TSH Talent Foundation fellowship.',
+      { text: 'merit-based Eiffel Excellence Scholarship;', link: 'https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence', description: 'French government scholarship for international students.' },
+      { text: 'merit-based TSE Scholarship;', link: 'https://www.tse-fr.eu/financial-aid', description: 'TSE scholarship for international students.' },
+      { text: 'TSH Talent Foundation fellowship;', link: 'https://tshtalentfoundation.org', description: '35 students selected to receive a mantorship and masterclasses to achieve their personal and career goals.' },
       'Coursework: Functional Analysis; Stochastic Optimal Control; Optimal Transport; Mathematical Game Theory;',
       'Optimisation & Statistics of Machine Learning; Program Evaluation; Non-Parametric & Financial Econometrics;',
       'Macro-Finance Models in Continuous-Time; Financial Regulation; Capital Markets; Contract Theory.',

@@ -16,6 +16,22 @@
       margin: 0;
     }
   }
+  .resume-link {
+  text-decoration: none;
+  border-bottom: none;
+  display: inline-flex;
+  color: #6e5241;
+  a {
+      padding: 0 0.5em;
+      margin: 0;
+    }
+
+  &:hover,
+  &:focus {
+    color: #6e5241;
+    text-decoration: none;
+  }
+}
 
   .education {
     .title {

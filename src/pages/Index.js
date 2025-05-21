@@ -5,7 +5,7 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description="Tatiana Sorokina's personal CV website. Paris-based mathematics master's student with research and industry experience in quantitative finance, AI, and risk management."
+    description="Tatiana Sorokina's CV website. Paris-based mathematics master's student with research and industry experience in quantitative finance, AI, and risk management."
   >
     <article className="post" id="index">
       <header>
@@ -25,7 +25,7 @@ const Index = () => (
         starting in <strong>November 2025</strong>.
       </p>
       <p>
-        You can view my full <Link to="/resume">resume</Link>, or <Link to="/contact">get in touch</Link>.
+        You can view my full <Link to="/resume">CV</Link>, or <Link to="/contact">get in touch</Link>.
       </p>
     </article>
   </Main>

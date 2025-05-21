@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContactIcons from './ContactIcons';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -30,7 +31,7 @@ const SideBar = () => (
         <li>
           {!window.location.pathname.includes('/resume') ? (
             <Link to="/resume" className="button">
-              View Resume
+              View CV
             </Link>
           ) : (
             <Link to="/" className="button">
@@ -43,8 +44,9 @@ const SideBar = () => (
 
     <section id="footer">
       <p className="copyright">
-        &copy; Tatiana Sorokina.
+        &copy; Tatiana Sorokina <Link to="/">tssorokina.com</Link>.
       </p>
+      <ContactIcons />
     </section>
   </section>
 );
