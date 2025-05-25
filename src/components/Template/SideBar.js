@@ -20,11 +20,10 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hello, I&apos;m Tatiana. I am a final year Mathematics Master&apos;s student with a strong
-        foundation in financial mathematics, risk management, and macroeconomic modeling. I&apos;m
-        seeking opportunities in Quantitative or AI Research in Financial Markets starting November
-        2025. My experience spans quantitative research, credit risk analysis, teaching, and deep
-        learning applications in finance.
+        Hello, I&apos;m Tatiana. I am a recent graduate of Mathematics Master&apos;s from
+        TSE (France) with a strong foundation in financial mathematics, credit risk management,
+        and macroeconomic modeling. I&apos;m seeking opportunities in Quantitative or AI Research
+        in Financial Markets starting November 2025.
       </p>
       <ul className="actions">
         <li>
