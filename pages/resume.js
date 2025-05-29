@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Main from '../src/layouts/Main';
-
 import Education from '../src/components/Resume/Education';
 import Experience from '../src/components/Resume/Experience';
 // import Skills from '../src/components/Resume/Skills';
@@ -24,25 +22,25 @@ const sections = {
 };
 
 const Resume = () => (
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2>
-            <Link href="/resume">Resume</Link>
-          </h2>
-          <div className="link-container">
-            {Object.keys(sections).map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
-          </div>
+  <article className="post" id="resume">
+    <header>
+      <div className="title">
+        <h2>
+          <Link href="/resume">Resume</Link>
+        </h2>
+        <div className="link-container">
+          {Object.keys(sections).map((sec) => (
+            <h4 key={sec}>
+              <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+            </h4>
+          ))}
         </div>
-      </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
-      ))}
-    </article>
+      </div>
+    </header>
+    {Object.entries(sections).map(([name, Section]) => (
+      <Section key={name} />
+    ))}
+  </article>
 );
 
 export default Resume;

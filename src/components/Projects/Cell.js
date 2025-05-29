@@ -47,6 +47,7 @@ const Project = ({ data }) => {
       {data.more && (
         <div className="project-more">
           <button
+            type="button"
             className="read-more-btn"
             onClick={() => setExpanded((prev) => !prev)}
             aria-expanded={expanded}

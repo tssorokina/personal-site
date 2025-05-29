@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import ContactIcons from './ContactIcons';
 
-
 const SideBar = () => {
   const router = useRouter();
   const isResume = router.pathname === '/resume';
@@ -12,7 +11,7 @@ const SideBar = () => {
     <section id="sidebar">
       <section id="intro">
         <Link href="/" className="logo">
-          <img src={`/images/me.png`} alt="Tatiana Sorokina" />
+          <img src="/images/me.png" alt="Tatiana Sorokina" />
         </Link>
         <header>
           <h2>Tatiana Sorokina</h2>

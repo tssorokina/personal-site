@@ -29,4 +29,11 @@ Main.propTypes = {
   description: PropTypes.string,
 };
 
+Main.defaultProps = {
+  children: null,
+  fullPage: false,
+  title: '',
+  description: '',
+};
+
 export default Main;

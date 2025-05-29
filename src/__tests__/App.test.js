@@ -2,12 +2,12 @@
  * @jest-environment jsdom
  */
 
-import '@testing-library/jest-dom';
-import '@testing-library/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
-import App from '../App';
+import '@testing-library/jest-dom';
+import '@testing-library/react';
+import App from '../../pages/_app'; // Adjust path if needed
 
 describe('renders the app', () => {
   // mocks the fetch API used on the stats page and the about page.

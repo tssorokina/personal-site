@@ -56,7 +56,11 @@ Degree.propTypes = {
     location: PropTypes.string,
     gpa: PropTypes.string,
     gpa_scale: PropTypes.string,
-  }).isRequired,
+  }),
+};
+
+Degree.defaultProps = {
+  data: {},
 };
 
 export default Degree;

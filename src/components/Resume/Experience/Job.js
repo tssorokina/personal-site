@@ -34,8 +34,9 @@ const Job = ({
         </ul>
       )}
       {more && (
-        <div className="job-more" style={{marginBottom: '2em' }}>
+        <div className="job-more" style={{ marginBottom: '2em' }}>
           <button
+            type="button"
             className="read-more-btn"
             onClick={() => setExpanded((prev) => !prev)}
             aria-expanded={expanded}
@@ -44,10 +45,10 @@ const Job = ({
             {expanded ? 'Show less' : 'Show details'}
           </button>
           {expanded && (
-              <div className="job-more-content">
-                <Markdown>{more}</Markdown>
-              </div>
-            )}
+          <div className="job-more-content">
+            <Markdown>{more}</Markdown>
+          </div>
+          )}
         </div>
       )}
     </article>
@@ -64,7 +65,11 @@ Job.propTypes = {
     summary: PropTypes.string,
     highlights: PropTypes.arrayOf(PropTypes.string),
     more: PropTypes.string, // new field
-  }).isRequired,
+  }),
+};
+
+Job.defaultProps = {
+  data: {},
 };
 
 export default Job;

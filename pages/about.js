@@ -13,9 +13,9 @@ const About = () => {
 
   const count = markdown
     ? markdown
-        .split(/\s+/)
-        .map((s) => s.replace(/\W/g, ''))
-        .filter((s) => s.length).length
+      .split(/\s+/)
+      .map((s) => s.replace(/\W/g, ''))
+      .filter((s) => s.length).length
     : 0;
 
   return (

@@ -11,7 +11,7 @@
  * @property {string[]} highlights- Bulleted highlights of your work
  */
 const work = [
-  
+
   {
     name: 'Higher School of Economics',
     position: 'Teaching Assistant',
