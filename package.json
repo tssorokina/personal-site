@@ -13,7 +13,9 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "predeploy": "echo 'No predeploy step needed'",
+    "deploy": "next build && gh-pages -d out",
+    "lint": "eslint . --ext .js,.jsx"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
