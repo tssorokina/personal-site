@@ -1,30 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Head from 'next/head';
 
-import Analytics from '../components/Template/Analytics';
 import Navigation from '../components/Template/Navigation';
 import SideBar from '../components/Template/SideBar';
-import ScrollToTop from '../components/Template/ScrollToTop';
 
 const Main = (props) => (
-  <HelmetProvider>
-    <Analytics />
-    <ScrollToTop />
-    <Helmet
-      titleTemplate="%s | Tatiana Sorokina"
-      defaultTitle="Tatiana Sorokina"
-      defer={false}
-    >
-      {props.title && <title>{props.title}</title>}
-      <meta name="description" content={props.description} />
-    </Helmet>
+  <>
+    <Head>
+      <title>{props.title ? `${props.title} | Tatiana Sorokina` : 'Tatiana Sorokina'}</title>
+      <meta name="description" content={props.description || ''} />
+    </Head>
     <div id="wrapper">
       <Navigation />
       <div id="main">{props.children}</div>
       {props.fullPage ? null : <SideBar />}
     </div>
-  </HelmetProvider>
+  </>
 );
 
 Main.propTypes = {
@@ -35,13 +27,6 @@ Main.propTypes = {
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
-};
-
-Main.defaultProps = {
-  children: null,
-  fullPage: false,
-  title: null,
-  description: "Tatiana Sorokina's personal website.",
 };
 
 export default Main;

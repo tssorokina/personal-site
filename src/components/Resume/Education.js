@@ -30,8 +30,4 @@ Education.propTypes = {
   ),
 };
 
-Education.defaultProps = {
-  data: [],
-};
-
 export default Education;

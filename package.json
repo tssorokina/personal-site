@@ -10,13 +10,10 @@
     "node": ">=16.x"
   },
   "scripts": {
-    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
-    "build": "rimraf ./build && react-scripts build",
-    "lint": "eslint \"**/*.js\"",
-    "predeploy": "npm run build && react-snap",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "test": "npx jest"
+  "dev": "next dev",
+  "build": "next build",
+  "export": "next build && next export",
+  "deploy": "npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -25,13 +22,12 @@
     "@fortawesome/react-fontawesome": "0.2.2",
     "dayjs": "^1.11.13",
     "markdown-to-jsx": "^7.7.1",
+    "next": "^15.3.2",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.3.1",
     "react-ga": "^3.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-router-dom": "^6.28.0",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
