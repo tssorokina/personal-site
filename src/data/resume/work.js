@@ -34,6 +34,27 @@ const work = [
       'Generated synthetic data for high-frequency algorithmic model back-testing and impact estimation',
       'Built diffusion kernels using Transformer and U-Net architectures in PyTorch',
     ],
+    more: `
+### Why Synthetic LOB Data?
+- **Realism vs. Assumptions**: Traditional synthetic data relies on SDE-based simulators with rigid assumptions. I wanted a purely data-driven approach that flexibly captures real order-book behavior.
+- **Counterfactual Simulation**: Generating LOB sequences that respond to hypothetical large orders enables richer back-testing for HFT strategies and market-impact models.
+
+### My Approach
+1. **Framing the Problem**  
+   Sliced order-level data into short time windows around the mid-price, then turned each window into a 2D “image” (price levels vs. time).
+2. **Diffusion Pipeline in PyTorch**
+   - Built a U-Net-style denoiser: added Gaussian noise over 1,000+ timesteps, then taught the network to recover LOB snapshots.
+   - Tested Conv kernels, RNNs, and Transformers—found that a convolutional U-Net on image-style input produced the best reconstructions.
+3. **Training & Evaluation**  
+   Created custom diffusion schedules, data loaders, and evaluation scripts. Benchmarked synthetic vs. real sequences on spread distributions, order-book clearing dynamics, and price shifts after large trades.
+
+### What I Learned & Built
+- Applied Stable Diffusion techniques from computer vision to time-series finance.
+- Recreated LOB microstructure noise and book-clearing dynamics with high fidelity.
+- Packaged all code (data transforms, diffusion loops, training routines) in a PyTorch repo.
+
+[View full write-up on GitHub ↗](https://github.com/tssorokina/personal-site/blob/main/projects/synthetic-lob.md)
+`,
   },
   {
     name: 'Tinkoff Bank, TCS Group',

@@ -1,20 +1,20 @@
 {
   "node_modules/next/dist/client/index.js -> ../pages/_app": {
-    "id": 9438,
+    "id": "node_modules/next/dist/client/index.js -> ../pages/_app",
     "files": [
-      "static/chunks/438.300265b4dfac08be.js"
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js"
     ]
   },
   "node_modules/next/dist/client/index.js -> ../pages/_error": {
-    "id": 2635,
+    "id": "node_modules/next/dist/client/index.js -> ../pages/_error",
     "files": [
-      "static/chunks/635.6217cfad44933fa1.js"
+      "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
     ]
   },
   "src/components/Template/Hamburger.js -> react-burger-menu/lib/menus/slide": {
-    "id": 1656,
+    "id": "src/components/Template/Hamburger.js -> react-burger-menu/lib/menus/slide",
     "files": [
-      "static/chunks/656.98635812d8013b49.js"
+      "static/chunks/_pages-dir-browser_node_modules_react-burger-menu_lib_menus_slide_js.js"
     ]
   }
 }

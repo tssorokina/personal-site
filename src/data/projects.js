@@ -11,6 +11,10 @@ const data = [
       'Developed a PyTorch neural-network solver for high-dimensional DSGE models; '
       + 'presented conference talk on parameter identification in dynamic structural models; '
       + 'automated data-scraping for monthly now-casting of Russian macroeconomic statistics.',
+    more:
+      'Worked on a neural-network solution algorithm for large-scale dynamic structural models, '
+      + 'focusing on parameter identification in non-linear HANK frameworks. '
+      + 'Presented findings at the 2024 International Conference on Macroeconomic Modelling.',
   },
   {
     title: 'Teaching Assistant: Data Analysis & Deep Learning',

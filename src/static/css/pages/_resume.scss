@@ -23,6 +23,7 @@
       margin-bottom: 2em;
     }
   }
+  
   .experience {
     .title {
       text-align: center;
@@ -34,6 +35,17 @@
       }
     }
   }
+
+  .job-more-content {
+  border: 1.5px solid #EBEDF0; // Use your accent color
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px #EBEDF0;
+  margin: 1em 0 0 0;
+  padding: 1.25em 1.5em;
+  transition: box-shadow 0.2s;
+  position: relative;
+  z-index: 2;
+}
 
   .jobs-container {
     .points {
