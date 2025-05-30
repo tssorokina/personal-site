@@ -5,7 +5,7 @@ import Markdown from 'markdown-to-jsx';
 
 const Job = ({
   data: {
-    name, position, url, startDate, endDate, summary, highlights, more,
+    name, position, url, startDate, endDate, summary, highlights, more, pdfLink, descLink
   },
 }) => {
   const [expanded, setExpanded] = useState(false);
@@ -47,6 +47,23 @@ const Job = ({
           {expanded && (
           <div className="job-more-content">
             <Markdown>{more}</Markdown>
+            {pdfLink && (
+                <div style={{ marginTop: '1.5em' }}>
+                  <a
+                    href={pdfLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pdf-link"
+                    style={{
+                      color: '#76223F',
+                      fontWeight: 'bold',
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    {descLink}
+                  </a>
+                </div>
+              )}
           </div>
           )}
         </div>
@@ -64,7 +81,9 @@ Job.propTypes = {
     endDate: PropTypes.string,
     summary: PropTypes.string,
     highlights: PropTypes.arrayOf(PropTypes.string),
-    more: PropTypes.string, // new field
+    more: PropTypes.string,
+    pdfLink: PropTypes.string, 
+    descLink: PropTypes.string,// new field
   }),
 };
 

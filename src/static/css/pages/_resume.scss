@@ -1,4 +1,5 @@
 /* Resume */
+@import '../libs/vars';
 
 #resume {
   .link-to {
@@ -37,9 +38,11 @@
   }
 
   .job-more-content {
-  border: 1.5px solid #EBEDF0; // Use your accent color
+  font-size: 0.9em;
+  background: _palette(bg-alt);
+  border: 1px solid _palette(border); // Use your accent color
   border-radius: 0.5em;
-  box-shadow: 0 2px 5px #EBEDF0;
+  box-shadow: 0 2px 5px _palette(bg-alt);
   margin: 1em 0 0 0;
   padding: 1.25em 1.5em;
   transition: box-shadow 0.2s;

@@ -35,26 +35,20 @@ const work = [
       'Built diffusion kernels using Transformer and U-Net architectures in PyTorch',
     ],
     more: `
-### Why Synthetic LOB Data?
-- **Realism vs. Assumptions**: Traditional synthetic data relies on SDE-based simulators with rigid assumptions. I wanted a purely data-driven approach that flexibly captures real order-book behavior.
-- **Counterfactual Simulation**: Generating LOB sequences that respond to hypothetical large orders enables richer back-testing for HFT strategies and market-impact models.
+The idea behind this project was to see whether a diffusion model could be trained to generate realistic Limit Order Book (LOB) data—something that could later be used for various downstream tasks. The motivation came from a pretty common problem in production-level models used by market makers. Take, for instance, an optimal trade execution model—one that tries to decide the best time, size, and price for a trade so it gets executed quickly and cheaply.
 
-### My Approach
-1. **Framing the Problem**  
-   Sliced order-level data into short time windows around the mid-price, then turned each window into a 2D “image” (price levels vs. time).
-2. **Diffusion Pipeline in PyTorch**
-   - Built a U-Net-style denoiser: added Gaussian noise over 1,000+ timesteps, then taught the network to recover LOB snapshots.
-   - Tested Conv kernels, RNNs, and Transformers—found that a convolutional U-Net on image-style input produced the best reconstructions.
-3. **Training & Evaluation**  
-   Created custom diffusion schedules, data loaders, and evaluation scripts. Benchmarked synthetic vs. real sequences on spread distributions, order-book clearing dynamics, and price shifts after large trades.
+Now, if the trade size is large enough, it might clear several levels of the book and push the price to a less favorable level. But if you train such models on historical data alone, they never really learn what effect their actions have on the price—they have no concept of market impact. As a result, they tend to make decisions that are theoretically optimal in hindsight but not in practice. So the idea is: what if we could generate synthetic data that is dynamic and reactive to agents’ behavior, but still behaves like the real thing?
 
-### What I Learned & Built
-- Applied Stable Diffusion techniques from computer vision to time-series finance.
-- Recreated LOB microstructure noise and book-clearing dynamics with high fidelity.
-- Packaged all code (data transforms, diffusion loops, training routines) in a PyTorch repo.
+The standard way of generating such data is to hand-craft an environment based on something like a stochastic differential equation (SDE), which, if well-tuned, mimics how a product moves in response to actions in the market. But this approach relies heavily on the researcher being right about how the market works—which is a big “if.”
 
-[View full write-up on GitHub ↗](https://github.com/tssorokina/personal-site/blob/main/projects/synthetic-lob.md)
+So instead, I looked into a more flexible, non-parametric approach: using diffusion models. These models start with actual LOB data (in short time windows), then progressively add noise until all structure is gone (basically pure Gaussian noise). A neural network is then trained to reverse this process and reconstruct the original data from the noise—learning, in effect, the underlying data distribution.
+
+The goal of this research internship was to test whether this kind of generative model could actually recreate realistic LOB behavior. A key point here is that at the level of individual order updates, the data isn't driven by macroeconomic news or trends—it’s just local interactions, which renders most standard predictive approaches pretty useless.
+
+I experimented with various architectures—convolutional and RNN-based denoisers—and came to an interesting conclusion. Even though transformer-style models are typically the go-to for sequence data, in this case, reshaping the LOB windows into image-like matrices (centered around the mid-price at time 0) and using a standard stable diffusion model gave better results. This image-based setup allowed the model to learn the implicit logic of how the book gets cleared and filled—and it managed to reproduce the fine-grained dynamics of the LOB quite well.
 `,
+    pdfLink: '/documents/TS_diffusion_slides.pdf',
+    descLink: 'View project presentation slides (internship report)'
   },
   {
     name: 'Tinkoff Bank, TCS Group',
