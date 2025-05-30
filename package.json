@@ -11,7 +11,7 @@
   },
 "scripts": {
   "dev": "next dev",
-  "build": "next build && next export",
+  "build": "next build",
   "predeploy": "echo 'No predeploy step needed'",
   "deploy": "next build && gh-pages -d out",
   "lint": "eslint . --ext .js,.jsx",
