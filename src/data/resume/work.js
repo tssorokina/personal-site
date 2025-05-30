@@ -48,7 +48,7 @@ The goal of this research internship was to test whether this kind of generative
 I experimented with various architectures—convolutional and RNN-based denoisers—and came to an interesting conclusion. Even though transformer-style models are typically the go-to for sequence data, in this case, reshaping the LOB windows into image-like matrices (centered around the mid-price at time 0) and using a standard stable diffusion model gave better results. This image-based setup allowed the model to learn the implicit logic of how the book gets cleared and filled—and it managed to reproduce the fine-grained dynamics of the LOB quite well.
 `,
     pdfLink: '/documents/TS_diffusion_slides.pdf',
-    descLink: 'View project presentation slides (internship report)'
+    descLink: 'View project presentation slides (internship report)',
   },
   {
     name: 'Tinkoff Bank, TCS Group',
