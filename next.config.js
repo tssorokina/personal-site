@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  output: 'export',
   trailingSlash: true,
+  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
