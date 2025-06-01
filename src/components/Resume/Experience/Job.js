@@ -5,7 +5,7 @@ import Markdown from 'markdown-to-jsx';
 
 const Job = ({
   data: {
-    name, position, url, startDate, endDate, summary, highlights, more, pdfLink, descLink,
+    name, position, url, startDate, endDate, summary, highlights, more, pdfLink, descLink, location
   },
 }) => {
   const [expanded, setExpanded] = useState(false);
@@ -16,10 +16,17 @@ const Job = ({
         <h4>
           <a href={url}>{name}</a> - {position}
         </h4>
-        <p className="daterange">
-          {dayjs(startDate).format('MMMM YYYY')} -{' '}
-          {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
-        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          <p className="daterange" style={{ margin: '-10px 0 0 0' }}>
+            {dayjs(startDate).format('MMMM YYYY')} - {' '}
+            {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
+          </p>
+          {location && (
+            <p className="daterange" style={{ margin: '-5px 0 5px 0', fontStyle: 'italic', textTransform: 'none' }}>
+              {location}
+            </p>
+          )}
+        </div>
       </header>
       {summary && (
         <div className="job-summary">
@@ -29,7 +36,7 @@ const Job = ({
       {highlights && highlights.length > 0 && (
         <ul className="points">
           {highlights.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
+            <li key={highlight}><Markdown>{highlight}</Markdown></li>
           ))}
         </ul>
       )}
@@ -79,6 +86,7 @@ Job.propTypes = {
     url: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string,
+    location: PropTypes.string.isRequired,
     summary: PropTypes.string,
     highlights: PropTypes.arrayOf(PropTypes.string),
     more: PropTypes.string,

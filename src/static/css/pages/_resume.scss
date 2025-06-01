@@ -41,7 +41,7 @@
   font-size: 0.9em;
   background: _palette(bg-alt);
   border: 1px solid _palette(border); // Use your accent color
-  border-radius: 0.5em;
+  border-radius: 0em;
   box-shadow: 0 2px 5px _palette(bg-alt);
   margin: 1em 0 0 0;
   padding: 1.25em 1.5em;
@@ -57,6 +57,15 @@
         padding: 0;
         font-size: 0.9em;
       }
+    }
+    .points p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+  }
+    .points strong {
+      color: inherit;
+      font-weight: bold;
     }
   }
 
@@ -141,6 +150,14 @@
 .course-dot {
   display: inline;
   // display: none;
+}
+
+.degree .points {
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
 }
 
 @include breakpoint(small) {

@@ -12,29 +12,31 @@
  */
 const work = [
   {
-    name: 'BNP Paribas, Global Markets',
+    name: 'BNP Paribas, Data&AI Lab at Global Markets',
     position: 'Quantitative Research Intern',
     url: 'https://group.bnpparibas.com/',
     startDate: '2025-05-01',
     endDate: '2025-10-31',
-    summary: 'Data & AI Lab, Paris, France',
+    summary: 'End of studies 6-month research internship',
+    location: ' Paris, France',
     highlights: [
       'Use Graph Neural Network to enhance stock earnings prediction by capturing asset interrelationships',
     ],
   },
   {
-    name: 'BNP Paribas, Global Markets',
+    name: 'BNP Paribas, Data&AI Lab at Global Markets',
     position: 'Quantitative Research Intern',
     url: 'https://group.bnpparibas.com/',
     startDate: '2024-07-01',
     endDate: '2024-09-30',
-    summary: 'Global Markets, Frankfurt am Main, Germany',
+    location: ' Frankfurt am Main, Germany',
     highlights: [
       'Researched Stable Diffusion models for financial data generation',
       'Generated synthetic data for high-frequency algorithmic model back-testing and impact estimation',
       'Built diffusion kernels using Transformer and U-Net architectures in PyTorch',
     ],
     more: `
+## Synthetic LOB Generation with Stable Diffusion
 The idea behind this project was to see whether a diffusion model could be trained to generate realistic Limit Order Book (LOB) data—something that could later be used for various downstream tasks. The motivation came from a pretty common problem in production-level models used by market makers. Take, for instance, an optimal trade execution model—one that tries to decide the best time, size, and price for a trade so it gets executed quickly and cheaply.
 
 Now, if the trade size is large enough, it might clear several levels of the book and push the price to a less favorable level. But if you train such models on historical data alone, they never really learn what effect their actions have on the price—they have no concept of market impact. As a result, they tend to make decisions that are theoretically optimal in hindsight but not in practice. So the idea is: what if we could generate synthetic data that is dynamic and reactive to agents’ behavior, but still behaves like the real thing?
@@ -56,21 +58,35 @@ I experimented with various architectures—convolutional and RNN-based denoiser
     url: 'https://tinkoff-group.com/',
     startDate: '2023-03-01',
     endDate: '2023-08-31',
-    summary: 'Credit Risk Analytics, Moscow, Russia',
+    location: ' Moscow, Russia',
+    summary: 'Credit Risk Analytics',
     highlights: [
       'Developed and integrated a risk-free limit pricing strategy for the main credit product',
       'Maintained and extended statistical models for counter-party risk prediction',
       'Conducted AB-test sensitivity studies and built an NPV model',
       'Performed Monte Carlo stress tests on the credit portfolio',
     ],
+    more: `
+## Risk-Neutral Pricing via Randomised A/B Testing
+I worked in the Risk Analytics team at Tinkoff, focusing on the revolver credit products portfolio. Day-to-day, we calibrated and monitored models of client behaviour. Each client was essentially treated as a separate project, exhibiting behavioural patterns similar to others with comparable characteristics. These behavioural models were built on vintages of past clients and regularly recalibrated against the most recent cohorts.
+My team conducted monthly calibrations and stress tests on the entire client portfolio for a given product, to ensure that the overall risk exposure remained within acceptable limits and that the required return targets were being met.
+
+My main project was the development of a new risk-neutral pricing scheme using a randomised A/B testing framework. Instead of assigning clients the usual predetermined product terms (such as interest rate, credit limit, repayment schedule, etc.), we introduced randomisation into these parameters for a portion of the clients. This created an ideal setup for applying econometric tools like Difference-in-Differences or Synthetic Control.
+
+The core hypothesis was that for clients with certain risk profiles, there might be more effective product terms that lead to a lower overall default rate. The test group received product terms that were randomly varied, while the control group continued under the existing pricing strategy. If the treatment had been categorical (e.g. a “yes/no” change), we could have simply run a standard RCT. But since our “treatment” involved continuous variation—like sampling an interest rate from a range or applying a random multiplier to the standard rate—analysing the outcome became significantly more complex.
+
+To handle this, I developed a propensity score framework to estimate the likelihood of a client receiving a “higher” treatment, based on their characteristics. This was viable because only part of the new product terms were randomised; the rest still depended on fundamental client features. Using this score, I grouped clients into strata with similar treatment probabilities. Within these groups, I was then able to compare outcomes using straightforward RCT logic—assessing how the new pricing terms influenced client behaviour.
+
+Off the back of the test results, I worked closely with senior risk managers to identify more effective pricing terms and propose a revised product strategy. We rolled out the new scheme in production, again using an A/B test to measure its impact on client behaviour in real-world conditions.`
   },
   {
     name: 'Biofarminvest Ltd.',
     position: 'Operations Manager',
-    url: 'https://biofarminvest.example.com/', // replace with actual URL if available
+    url: 'https://ribav.ru/', // replace with actual URL if available
     startDate: '2019-07-01',
     endDate: '2024-01-31',
-    summary: 'Agricultural biotech startup, Ramenskoye, Russia',
+    location: ' Ramenskoye, Russia',
+    summary: 'Agricultural biotech startup',
     highlights: [
       'Optimised production and delivery operations; researched product-line extensions and conducted market monitoring',
       'Managed cross-border sales and relationships with international clients',
@@ -83,11 +99,13 @@ I experimented with various architectures—convolutional and RNN-based denoiser
     url: 'https://www.hse.ru/',
     startDate: '2022-09-01',
     endDate: '2024-07-31',
-    summary: 'Faculties of Economic and Computer Sciences, Moscow, Russia',
+    location: ' Moscow, Russia',
+    summary: 'Taught courses at Faculties of Economic and Computer Sciencesas assisant to the lecturer and as a composer of practice sessions.',
     highlights: [
-      'Compiled and taught “Data Analysis in Python” practice sessions; prepared seminars and graded exam papers',
-      'Prepared and graded assignments for “Introduction to Deep Learning” and “Applied Data Analysis Problems” – covering business-data ML, time-series, recommendation systems, sound/CV (YOLO), NLP (transformers), and generative models (GAN, VAE, diffusion)',
-      'Assisted in “Macroeconomics” course: held consultations, graded assignments, and provided exam materials',
+`Compiled and taught [“Data Analysis in Python”  practice sessions](https://youtube.com/playlist?list=PLgt6p-DpESX4dl2n-yAZPK4bRRCw-rVPH&si=DSjs8TfIvG01eswb); prepared seminars and quizes, graded exam papers. Topics included: Data scraping and Analysis, Data Visualisation, Statistical Inference, Regression Analysis, Time-Series Analysis, Machine Learning`,
+`Prepared and graded assignments for “Introduction to Deep Learning” and “Applied Data Analysis Problems” (lecturer [Evgeny Sokolov](https://www.hse.ru/en/staff/esokolov/)) Topics included: Introduction to Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Computer Vision (models of pixel segmentation and object detection), Transformers, Attention Mechanisms, Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), A/B-tests, Time Series Models, and MLOps`,
+`Assisted in “Macroeconomics” (lecturers [Olga Osotova](https://www.hse.ru/en/org/persons/11254349/) [Irina Kavitskaya](https://www.hse.ru/en/org/persons/65290/)) course: held consultations, graded assignments, and provided exam materials. 
+Topics included: Economic growth and development, Business cycles and economic fluctuations, Monetary policy and central banking, Fiscal policy and public finance, International trade and finance, Exchange rates and currency markets, Financial markets, investments, and asset pricing, Financial crises and systemic risk`,
     ],
   },
 ];

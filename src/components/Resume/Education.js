@@ -21,8 +21,8 @@ Education.propTypes = {
       school: PropTypes.string,
       degree: PropTypes.string,
       link: PropTypes.string,
-      year: PropTypes.number,
-      description: PropTypes.string,
+      year: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      description: PropTypes.array, // <-- change from string to array
       location: PropTypes.string,
       gpa: PropTypes.string,
       gpa_scale: PropTypes.string,
