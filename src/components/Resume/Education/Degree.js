@@ -10,14 +10,17 @@ const Degree = ({ data }) => (
           {data.school} &middot; {data.location}
         </a>
       </h4>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <div style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flexWrap: 'wrap',
+      }}
+      >
         <h4
           className="daterange"
           style={{
-            margin: '-5px 0 0 0',           // smaller space above degree
+            margin: '-5px 0 0 0', // smaller space above degree
             // fontStyle: 'bold',
             textTransform: 'none',
-            lineHeight: 1.2,               // tighter line height
+            lineHeight: 1.2, // tighter line height
           }}
         >
           {data.degree}

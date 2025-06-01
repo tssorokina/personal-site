@@ -5,7 +5,7 @@ import Markdown from 'markdown-to-jsx';
 
 const Job = ({
   data: {
-    name, position, url, startDate, endDate, summary, highlights, more, pdfLink, descLink, location
+    name, position, url, startDate, endDate, summary, highlights, more, pdfLink, descLink, location,
   },
 }) => {
   const [expanded, setExpanded] = useState(false);
@@ -16,7 +16,10 @@ const Job = ({
         <h4>
           <a href={url}>{name}</a> - {position}
         </h4>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+        <div style={{
+          display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flexWrap: 'wrap',
+        }}
+        >
           <p className="daterange" style={{ margin: '-10px 0 0 0' }}>
             {dayjs(startDate).format('MMMM YYYY')} - {' '}
             {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}

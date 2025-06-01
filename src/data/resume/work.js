@@ -77,7 +77,7 @@ The core hypothesis was that for clients with certain risk profiles, there might
 
 To handle this, I developed a propensity score framework to estimate the likelihood of a client receiving a “higher” treatment, based on their characteristics. This was viable because only part of the new product terms were randomised; the rest still depended on fundamental client features. Using this score, I grouped clients into strata with similar treatment probabilities. Within these groups, I was then able to compare outcomes using straightforward RCT logic—assessing how the new pricing terms influenced client behaviour.
 
-Off the back of the test results, I worked closely with senior risk managers to identify more effective pricing terms and propose a revised product strategy. We rolled out the new scheme in production, again using an A/B test to measure its impact on client behaviour in real-world conditions.`
+Off the back of the test results, I worked closely with senior risk managers to identify more effective pricing terms and propose a revised product strategy. We rolled out the new scheme in production, again using an A/B test to measure its impact on client behaviour in real-world conditions.`,
   },
   {
     name: 'Biofarminvest Ltd.',
@@ -102,9 +102,9 @@ Off the back of the test results, I worked closely with senior risk managers to 
     location: ' Moscow, Russia',
     summary: 'Taught courses at Faculties of Economic and Computer Sciencesas assisant to the lecturer and as a composer of practice sessions.',
     highlights: [
-`Compiled and taught [“Data Analysis in Python”  practice sessions](https://youtube.com/playlist?list=PLgt6p-DpESX4dl2n-yAZPK4bRRCw-rVPH&si=DSjs8TfIvG01eswb); prepared seminars and quizes, graded exam papers. Topics included: Data scraping and Analysis, Data Visualisation, Statistical Inference, Regression Analysis, Time-Series Analysis, Machine Learning`,
-`Prepared and graded assignments for “Introduction to Deep Learning” and “Applied Data Analysis Problems” (lecturer [Evgeny Sokolov](https://www.hse.ru/en/staff/esokolov/)) Topics included: Introduction to Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Computer Vision (models of pixel segmentation and object detection), Transformers, Attention Mechanisms, Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), A/B-tests, Time Series Models, and MLOps`,
-`Assisted in “Macroeconomics” (lecturers [Olga Osotova](https://www.hse.ru/en/org/persons/11254349/) [Irina Kavitskaya](https://www.hse.ru/en/org/persons/65290/)) course: held consultations, graded assignments, and provided exam materials. 
+      'Compiled and taught [“Data Analysis in Python”  practice sessions](https://youtube.com/playlist?list=PLgt6p-DpESX4dl2n-yAZPK4bRRCw-rVPH&si=DSjs8TfIvG01eswb); prepared seminars and quizes, graded exam papers. Topics included: Data scraping and Analysis, Data Visualisation, Statistical Inference, Regression Analysis, Time-Series Analysis, Machine Learning',
+      'Prepared and graded assignments for “Introduction to Deep Learning” and “Applied Data Analysis Problems” (lecturer [Evgeny Sokolov](https://www.hse.ru/en/staff/esokolov/)) Topics included: Introduction to Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Computer Vision (models of pixel segmentation and object detection), Transformers, Attention Mechanisms, Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), A/B-tests, Time Series Models, and MLOps',
+      `Assisted in “Macroeconomics” (lecturers [Olga Osotova](https://www.hse.ru/en/org/persons/11254349/) [Irina Kavitskaya](https://www.hse.ru/en/org/persons/65290/)) course: held consultations, graded assignments, and provided exam materials. 
 Topics included: Economic growth and development, Business cycles and economic fluctuations, Monetary policy and central banking, Fiscal policy and public finance, International trade and finance, Exchange rates and currency markets, Financial markets, investments, and asset pricing, Financial crises and systemic risk`,
     ],
   },

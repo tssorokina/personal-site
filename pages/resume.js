@@ -27,47 +27,44 @@ const resumePdfUrl = '/documents/Tatiana_Sorokina_CV.pdf';
 
 const Resume = () => (
   <article className="post" id="resume">
-  <header>
-    <div className="title" style={{ width: '100%' }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        width: '100%',
-      }}>
-        <h2 style={{ display: 'inline-block', marginRight: '1em', marginBottom: 0 }}>
-          <Link href="/resume">Resume</Link>
-        </h2>
-        <a
-          href={resumePdfUrl}
-          download
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button"
+    <header>
+      <div className="title" style={{ width: '100%' }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          width: '100%',
+        }}
         >
-          Download CV as PDF
-        </a>
+          <h2 style={{ display: 'inline-block', marginRight: '1em', marginBottom: 0 }}>
+            <Link href="/resume">Curriculum Vitae</Link>
+          </h2>
+          <a
+            href={resumePdfUrl}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button"
+          >
+            Download CV as PDF
+          </a>
+        </div>
+        <div className="link-container" style={{ marginTop: '0.75em' }}>
+          {Object.keys(sections).map((sec) => sec !== 'References' && (
+          <h4 key={sec}>
+            <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+          </h4>
+          ))}
+          <h4>
+            <a href="#projects-on-resume">Projects</a>
+          </h4>
+          <h4>
+            <a href="#references">References</a>
+          </h4>
+        </div>
       </div>
-      <div className="link-container" style={{ marginTop: '0.75em' }}>
-        {Object.keys(sections).map((sec) =>
-          sec !== 'References' && (
-            <h4 key={sec}>
-              <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-            </h4>
-          )
-        )}
-        <h4>
-          <a href="#projects-on-resume">Projects</a>
-        </h4>
-        <h4>
-          <a href="#references">References</a>
-        </h4>
-      </div>
-    </div>
-  </header>
-    {Object.entries(sections).map(([name, Section]) =>
-      name !== 'References' ? <Section key={name} /> : null
-    )}
+    </header>
+    {Object.entries(sections).map(([name, Section]) => (name !== 'References' ? <Section key={name} /> : null))}
     <section id="projects-on-resume">
       <div className="title">
         <h3>Research Projects and Internships</h3>
@@ -77,8 +74,7 @@ const Resume = () => (
       ))}
     </section>
     <section id="references">
-      <div className="title">
-      </div>
+      <div className="title" />
       <References />
     </section>
   </article>

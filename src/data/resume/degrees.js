@@ -12,16 +12,16 @@ const data = [
       { text: 'merit-based Eiffel Excellence Scholarship;', link: 'https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence', description: 'French government scholarship for international students.' },
       { text: 'merit-based TSE Scholarship;', link: 'https://www.tse-fr.eu/financial-aid', description: 'TSE scholarship for international students.' },
       { text: 'TSH Talent Foundation fellowship;', link: 'https://tshtalentfoundation.org', description: '35 students selected to receive a mantorship and masterclasses to achieve their personal and career goals.' },
-`**Coursework Summary**: 
+      `**Coursework Summary**: 
 
 *Mathematics and Optimisation*: Functional Analysis, Convex Optimisation & Statistics of Machine Learning, Optimal Transport, Stochastic Optimal Control, Markov Decision Processes and Martingale Theory.
 
 *Economics and Finance*: Advanced Macro- and Microeconomics, Contract Theory, Industrial Organisation (theoretical foundation of M&A and legislation), Macro-Finance Models in Continuous-Time, Financial Regulation, Capital Markets.
 
 *Econometrics and Game Theory*: Mathematical Game Theory, Non-Parametric & Financial Econometrics, Program Evaluation, Multivariate Time Series Econometrics.`,
-`**Reading Course**: ["Feynman–Kac Framework for Parabolic PDEs: Foundations & Application to Option Pricing"](/documents/reading_course.pdf).`,
-'**First year internship**: Synthetic Limit order book generation using Stable Diffusion (see [Experience](/resume/#experience) for details).',
-'**Second year internship**: Portfolio Returns Prediction with Graph Neural Networks  (see [Experience](/resume/#experience) for details).'
+      '**Reading Course**: ["Feynman–Kac Framework for Parabolic PDEs: Foundations & Application to Option Pricing"](/documents/reading_course.pdf).',
+      '**First year internship**: Synthetic Limit order book generation using Stable Diffusion (see [Experience](/resume/#experience) for details).',
+      '**Second year internship**: Portfolio Returns Prediction with Graph Neural Networks  (see [Experience](/resume/#experience) for details).',
     ],
   },
   {

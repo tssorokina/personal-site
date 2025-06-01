@@ -22,7 +22,17 @@ Education.propTypes = {
       degree: PropTypes.string,
       link: PropTypes.string,
       year: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      description: PropTypes.array, // <-- change from string to array
+      description: PropTypes.arrayOf(
+        PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.shape({
+            text: PropTypes.string.isRequired,
+            link: PropTypes.string,
+            title: PropTypes.string,
+            description: PropTypes.string,
+          }),
+        ]),
+      ),
       location: PropTypes.string,
       gpa: PropTypes.string,
       gpa_scale: PropTypes.string,
