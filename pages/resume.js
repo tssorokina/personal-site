@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Education from '../src/components/Resume/Education';
 import Experience from '../src/components/Resume/Experience';
 // import Skills from '../src/components/Resume/Skills';
@@ -13,8 +15,6 @@ import data from '../src/data/projects';
 import degrees from '../src/data/resume/degrees';
 import work from '../src/data/resume/work';
 // import { skills, categories } from '../src/data/resume/skills';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // NOTE: sections are displayed in order defined.
 const sections = {

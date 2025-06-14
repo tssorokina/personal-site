@@ -6,52 +6,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
-const Project = ({ data }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const getIcons = (markdown) => {
-    const icons = [];
-    if (typeof markdown === 'string') {
-      if (markdown.match(/github\.com/)) {
-        icons.push(
-          <a
-            key="github"
-            href={markdown.match(/\[.*?\]\((https:\/\/github\.com[^\)]*)\)/)?.[1] || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ marginLeft: '0.5em' }}
-            aria-label="GitHub"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        );
-      }
-      if (markdown.match(/\.pdf\)/)) {
-        icons.push(
-          <a
-            key="pdf"
-            href={markdown.match(/\[.*?\]\(([^)]+\.pdf)\)/)?.[1] || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ marginLeft: '0.5em' }}
-            aria-label="Download PDF"
-          >
-            <FontAwesomeIcon icon={faDownload} />
-          </a>
-        );
-      }
-    }
-    return icons;
-  };
 
 const markdownOverrides = {
   a: {
     component: ({ children, ...props }) => {
-      // If the link text is "See the project on GitHub", prepend the GitHub icon
-      if (
-        typeof children[0] === 'string' &&
-        children[0].toLowerCase().includes('github')
-      ) {
+      // Safely extract text from children for icon logic
+      let text = '';
+      if (typeof children === 'string') {
+        text = children;
+      } else if (Array.isArray(children)) {
+        text = children
+          .map(child => (typeof child === 'string' ? child : ''))
+          .join('');
+      } else if (children && typeof children.props === 'object' && children.props.children) {
+        // If children is a React element with its own children
+        if (typeof children.props.children === 'string') {
+          text = children.props.children;
+        }
+      }
+
+      if (text && text.toLowerCase().includes('github')) {
         return (
           <a {...props} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} style={{ marginRight: '0.3em' }} />
@@ -59,11 +33,7 @@ const markdownOverrides = {
           </a>
         );
       }
-      // If the link text is "Download PDF of the paper", prepend the Download icon
-      if (
-        typeof children[0] === 'string' &&
-        children[0].toLowerCase().includes('download pdf')
-      ) {
+      if (text && text.toLowerCase().includes('download pdf')) {
         return (
           <a {...props} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faDownload} style={{ marginRight: '0.3em' }} />
@@ -71,7 +41,6 @@ const markdownOverrides = {
           </a>
         );
       }
-      // Otherwise, render the link normally
       return (
         <a {...props} target="_blank" rel="noopener noreferrer">
           {children}
@@ -80,6 +49,9 @@ const markdownOverrides = {
     },
   },
 };
+
+const Project = ({ data }) => {
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <article className="jobs-container">
@@ -120,7 +92,7 @@ const markdownOverrides = {
           <Markdown>{data.desc}</Markdown>
         </div>
       )}
-      
+
       {data.highlights && data.highlights.length > 0 && (
         <ul className="points">
           {data.highlights.map((highlight) => (

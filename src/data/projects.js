@@ -1,6 +1,6 @@
 // This file contains a list of research and teaching projects
 const data = [
-    {
+  {
     title: 'Creditor-Sovereign Relationship under Asymmetric Information in a Dynamic Model of Sovereign Debt',
     subtitle: 'TSE, Research Seminar on Economic Theory',
     StartDate: '2025-10-01',
@@ -8,7 +8,7 @@ const data = [
     desc: 'Project for [TSE MRes Masters](https://www.tse-fr.eu/ARDE-MRes) course of Contract Theory (Economic Theory research track), taught by [Sara Shahanaghi](https://www.sshahanaghi.com/) and [David Martimort](https://scholar.google.com/citations?user=1LuYK-AAAAAJ&hl=en)',
     highlights:
       ['Used the the neural network model solution framework developped in my previous projects to solve a dynamic optimal contract problem',
-        'Modelled optimal government debt contracts from a social perspective, explored different default scenarios'
+        'Modelled optimal government debt contracts from a social perspective, explored different default scenarios',
       ],
     more:
 `## Creditor-Sovereign Relationship under Asymmetric Information in a Dynamic Model of Sovereign Debt
@@ -23,7 +23,7 @@ Simulations reveal that in the full-information regime, the sovereign's borrowin
 
 The findings underscore the importance of transparency and signal credibility in sovereign debt markets. They suggest that policies enhancing data disclosure or incentivizing credible signaling could improve borrowing outcomes and reduce default volatility. The paper concludes by outlining several directions for future research, including the incorporation of long-term debt, continuous signaling strategies, and dynamic renegotiation frameworks.
 
-[Download PDF of the report](documents/Contract_Theory.pdf)`,
+[Download PDF of the report](/documents/Contract_Theory.pdf)`,
   },
   {
     title: 'Research Internship in Macroeconomic Modelling',
@@ -31,9 +31,9 @@ The findings underscore the importance of transparency and signal credibility in
     StartDate: '2023-03-01',
     highlights:
       ['Developed a PyTorch neural-network solver for high-dimensional DSGE models; ',
-      'Prticipated in [XIV International Scientific and Practical Conference of Undergraduate and Postgraduate Students](https://stm.hse.ru/2023/) with a talk on usind macroeconomic statistical data in DSGE models and identification issues',
-      'Automated data-scraping for monthly now-casting of Russian macroeconomic statistics',
-      'Prepared monthly reviews of recent publications from economic journals',]
+        'Prticipated in [XIV International Scientific and Practical Conference of Undergraduate and Postgraduate Students](https://stm.hse.ru/2023/) with a talk on usind macroeconomic statistical data in DSGE models and identification issues',
+        'Automated data-scraping for monthly now-casting of Russian macroeconomic statistics',
+        'Prepared monthly reviews of recent publications from economic journals'],
   },
   {
     title: 'Solving & Estimating Non-Linear HANK Models with ML',
@@ -41,13 +41,13 @@ The findings underscore the importance of transparency and signal credibility in
     StartDate: '2023-01-01',
     EndDate: '2023-05-31',
     desc:
-`Bachelor's thesis written under supervision of [Nikolay Pilnik](https://www.hse.ru/en/org/persons/11532263/). Received the highest grade, was recommended for publication. It is in a plan for the nearest future to extend the project and apply for a publication.`,
-highlights:
-[`Used PyTorch to create a fremework for solution of DSGE models using various appropriate parameter values and estimating the parameters using a Kalman filter`,
-  `Leveraged the Reinforcement Learning approach from computer science to solve macroeconomic agent-based models with the system behaviour defined as multi-dimensional SDE system`,
-  `Explored the behaviour of the algorithm in differect settings, including low- and hight- dimentional decision rules, and systems with prede-fined and unfeasible analytical solutions.`,
+'Bachelor\'s thesis written under supervision of [Nikolay Pilnik](https://www.hse.ru/en/org/persons/11532263/). Received the highest grade, was recommended for publication. It is in a plan for the nearest future to extend the project and apply for a publication.',
+    highlights:
+['Used PyTorch to create a fremework for solution of DSGE models using various appropriate parameter values and estimating the parameters using a Kalman filter',
+  'Leveraged the Reinforcement Learning approach from computer science to solve macroeconomic agent-based models with the system behaviour defined as multi-dimensional SDE system',
+  'Explored the behaviour of the algorithm in differect settings, including low- and hight- dimentional decision rules, and systems with prede-fined and unfeasible analytical solutions.',
 ],
-  more:
+    more:
 `In macroeconomic research, especially at central banks, models used for policy analysis are increasingly complex. One prominent class is Heterogeneous-Agent New Keynesian (HANK) models, which incorporate differences across individual agents—like varying incomes or asset holdings—to capture distributional effects of monetary policy. These models are essential for understanding how economic shocks propagate through society. However, solving them is computationally intense. The state spaces are massive, the decision rules are nonlinear, and existing solution techniques buckle under the sheer dimensionality.
 
 To tackle this, my thesis proposes a machine learning framework for approximating global solutions to such high-dimensional economic models. Specifically, I employ neural networks as flexible function approximators that can learn agents’ optimal behavior directly from the model’s structure, rather than relying on traditional numerical grids. Importantly, the solution framework is not limited to a specific parameter set—it generalizes across the entire parameter space, which lays the groundwork for faster and more flexible model estimation.
@@ -58,19 +58,19 @@ However, when scaled up to fully nonlinear HANK models—where heterogeneity and
 
 In short, while the current method offers a powerful proof of concept for integrating machine learning into macroeconomic model solution and estimation, further refinements are necessary before it becomes a practical tool for policy-relevant HANK models. The thesis ends by laying out these next steps, focusing on enhancing the training procedure, improving sampling, and bridging the gap between micro-level heterogeneity and macro-level interpretability.
 
-[Download PDF of the thesis](documents/HANK_models.pdf)`,
+[Download PDF of the thesis](/documents/HANK_models.pdf)`,
   },
   {
     title: 'Analysing Russian Central Bank Communication Impact on Monetary Policy Effectiveness With Natural Language Processing',
     subtitle: 'HSE, Faculty of Economic Sciences (supervisor: Mariam Mamedli)',
     StartDate: '2022-01-01',
     EndDate: '2022-06-21',
-    desc: `Third year project for the seminal on Machine Learning Techniques Usage in Economic Research undersupervision of [Mariam Mamedli](https://www.linkedin.com/in/mariammamedli/?originalSubdomain=sg). Received the highest grade.`,
+    desc: 'Third year project for the seminal on Machine Learning Techniques Usage in Economic Research undersupervision of [Mariam Mamedli](https://www.linkedin.com/in/mariammamedli/?originalSubdomain=sg). Received the highest grade.',
     highlights:
       ['Customised transformer models for Russian language to extract economic information from Russian Central Bank releases; ',
         'Scraped data of economic texts and news in Russian language to finetune the model to specific text styles',
-      'Demonstrated that filtering out the informational part of monetary shocks improves instrument strength in SVAR model of the economy.',],
-      more: 
+        'Demonstrated that filtering out the informational part of monetary shocks improves instrument strength in SVAR model of the economy.'],
+    more:
 `## Uncovering the Hidden Signals in Central Bank Communications
 
 This research project was a bit of a deep dive into an intersection of monetary policy, market microstructure, and NLP. The idea was to investigate how the Russian Central Bank's official communications—press releases, to be specific—affect financial markets, beyond the standard interest rate decisions. Central banks don’t just set rates—they signal outlooks, priorities, even concerns. And I wanted to see if we could measure that informational content directly.
@@ -89,8 +89,8 @@ In the end, the project showed that market reactions to monetary policy in Russi
 
 [See the project on GitHub](https://github.com/tssorokina/information_component_of_monetary_shocks)
 
-[Download PDF of the paper](documents/Monetary_Shocks_with_NLP)`
-},
+[Download PDF of the paper](/documents/Monetary_Shocks_with_NLP.pdf)`,
+  },
 ];
 
 export default data;

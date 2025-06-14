@@ -36,7 +36,7 @@ const data = [
       'Top 3% of program',
       'Fully-covered tuition',
       'Scholarship for high academic performance',
-      `**Coursework**: Advanced Statistical Methods; Econometrics; Stochastic Processes; Dynamic Optimisation; Applied ML; Deep Learning & MLOps; Financial Economics & Markets; Intermediate Micro- & Macro-Economics`,
+      '**Coursework**: Advanced Statistical Methods; Econometrics; Stochastic Processes; Dynamic Optimisation; Applied ML; Deep Learning & MLOps; Financial Economics & Markets; Intermediate Micro- & Macro-Economics',
       `**Coursework Summary:**:
 
 *Math, Stats, and Optimisation*: Calculus, Linear Algebra, Probability Theory, Mathematical Statistics, Stochastic Processes, Dynamic Optimisation, Statistical Analysis of Non-Numerical Information, Game Theory
@@ -45,8 +45,8 @@ const data = [
 
 *Economics and Finance*:
 Intermediate Micro- and Macroeconomics, Financial Economics, Financial Markets, Financial Accounting and Reporting, Professional Participants in Financial Markets, Economic Statistics, Economic History`,
-`**Third Year Term Paper**: Analysing Russian Central Bank Communication Impact on Monetary Policy Effectiveness With Natural Language Processing (see [Projects](/resume/#projects) for details)`,
-`**Thesis**: Solving and Estimating Non-Linear HANK Models With Machine Learning (see [Projects](/resume/#projects) for details)`,
+      '**Third Year Term Paper**: Analysing Russian Central Bank Communication Impact on Monetary Policy Effectiveness With Natural Language Processing (see [Projects](/resume/#projects) for details)',
+      '**Thesis**: Solving and Estimating Non-Linear HANK Models With Machine Learning (see [Projects](/resume/#projects) for details)',
     ],
   },
   {
@@ -60,7 +60,7 @@ Intermediate Micro- and Macroeconomics, Financial Economics, Financial Markets, 
       'Merit-based [Prof. Lev Lyubumov scholarship](https://economics.hse.ru/io/news/542937241.html) related to HSE Faculty of Economic Sciences program for students outgoing for an exchange semester',
       '[Read about my experience studying abroad (text in Russian)](https://economics.hse.ru/io/news/718289675.html)',
       'By the end of the semester, got invited to pursue a research internship in the intersection of Data Science and Macroeconomic at [CREST, Centre of Research in Economics and Statistics](https://crest.science/)',
-      `**Coursework**: Advanced Econometrics; Time Series Modelling; Financial Mathematics & Asset Pricing; Globalisation and International Trade; Non-Life Insurance`,
+      '**Coursework**: Advanced Econometrics; Time Series Modelling; Financial Mathematics & Asset Pricing; Globalisation and International Trade; Non-Life Insurance',
     ],
   },
 ];
