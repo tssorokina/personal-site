@@ -13,6 +13,8 @@ import data from '../src/data/projects';
 import degrees from '../src/data/resume/degrees';
 import work from '../src/data/resume/work';
 // import { skills, categories } from '../src/data/resume/skills';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // NOTE: sections are displayed in order defined.
 const sections = {
@@ -29,12 +31,13 @@ const Resume = () => (
   <article className="post" id="resume">
     <header>
       <div className="title" style={{ width: '100%' }}>
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          width: '100%',
-        }}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%',
+          }}
         >
           <h2 style={{ display: 'inline-block', marginRight: '1em', marginBottom: 0 }}>
             <Link href="/resume">Curriculum Vitae</Link>
@@ -46,6 +49,7 @@ const Resume = () => (
             rel="noopener noreferrer"
             className="button"
           >
+            <FontAwesomeIcon icon={faDownload} style={{ marginRight: '0.5em' }} />
             Download CV as PDF
           </a>
         </div>

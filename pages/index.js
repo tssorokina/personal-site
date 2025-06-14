@@ -20,7 +20,7 @@ const Index = () => (
       starting in <strong>November 2025</strong>.
     </p>
     <p>
-      You can view my full <Link href="/resume">resume</Link>, or <Link href="/contact">get in touch</Link>.
+      You can view my full <Link href="/resume">resume</Link>, or <Link href="mailto:tssorokina@edu.hse.ru">get in touch</Link>.
     </p>
   </article>
 );
