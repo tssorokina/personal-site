@@ -47,12 +47,6 @@
       "namedRegex": "^/notfound(?:/)?$"
     },
     {
-      "page": "/projects",
-      "regex": "^/projects(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/projects(?:/)?$"
-    },
-    {
       "page": "/resume",
       "regex": "^/resume(?:/)?$",
       "routeKeys": {},
