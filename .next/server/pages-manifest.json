@@ -1,7 +1,7 @@
 {
   "/about": "pages/about.html",
-  "/": "pages/index.html",
   "/_error": "pages/_error.js",
+  "/": "pages/index.html",
   "/resume": "pages/resume.html",
   "/_app": "pages/_app.js",
   "/notfound": "pages/notfound.html",
