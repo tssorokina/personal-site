@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
-
 const markdownOverrides = {
   a: {
     component: ({ children, ...props }) => {
@@ -16,7 +15,7 @@ const markdownOverrides = {
         text = children;
       } else if (Array.isArray(children)) {
         text = children
-          .map(child => (typeof child === 'string' ? child : ''))
+          .map((child) => (typeof child === 'string' ? child : ''))
           .join('');
       } else if (children && typeof children.props === 'object' && children.props.children) {
         // If children is a React element with its own children
