@@ -24,10 +24,9 @@ const SideBar = () => {
       <section className="blurb">
         <h2>About</h2>
         <p>
-          Hello, I&apos;m Tatiana. I am a recent graduate of Mathematics Master&apos;s from
-          TSE (France) with a strong foundation in financial mathematics, credit risk management,
-          and macroeconomic modeling. I&apos;m seeking opportunities in Quantitative or AI Research
-          in Financial Markets starting November 2025.
+          Hello, I&apos;m Tatiana. I am a graduate Data Scientist at BNP Paribas,
+          in Global Markets. My work spans ML-based trading research
+          to Agentic AI, bridging quantitative finance and modern AI systems.
         </p>
         <ul className="actions">
           <li>

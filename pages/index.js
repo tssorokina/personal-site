@@ -14,10 +14,7 @@ const Index = () => (
       </div>
     </header>
     <p>
-      I’m Tatiana, a final-year mathematics master’s student based in Paris with experience in
-      quantitative research, financial risk modeling, and deep learning. I’m currently looking
-      for opportunities at the intersection of quantitative research and AI in financial markets,
-      starting in <strong>November 2025</strong>.
+      I’m Tatiana, a graduate Data Scientist at BNP Paribas, in Global Markets. My work spans ML-based trading research to Agentic AI, bridging quantitative finance and modern AI systems.
     </p>
     <p>
       You can view my full <Link href="/resume">resume</Link>, or <Link href="mailto:tssorokina@edu.hse.ru">get in touch</Link>.

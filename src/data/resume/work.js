@@ -13,6 +13,14 @@
 const work = [
   {
     name: 'BNP Paribas, Data&AI Lab at Global Markets',
+    position: 'Quantitative Research Graduate Analyst',
+    url: 'https://group.bnpparibas.com/',
+    startDate: '2025-12-01',
+    location: ' Frankfurt am Main, Germany',
+    highlights: [],
+  },
+  {
+    name: 'BNP Paribas, Data&AI Lab at Global Markets',
     position: 'Quantitative Research Intern',
     url: 'https://group.bnpparibas.com/',
     startDate: '2025-05-01',
@@ -61,10 +69,10 @@ I experimented with various architectures—convolutional and RNN-based denoiser
     location: ' Moscow, Russia',
     summary: 'Credit Risk Analytics',
     highlights: [
-      'Developed and integrated a risk-free limit pricing strategy for the main credit product',
-      'Maintained and extended statistical models for counter-party risk prediction',
-      'Conducted AB-test sensitivity studies and built an NPV model',
-      'Performed Monte Carlo stress tests on the credit portfolio',
+      'Developed and integrated a risk-free limit pricing strategy for the main revolving credit product for retail clients',
+      'Maintained and extended statistical NPV models for client risk prediction',
+      'Conducted AB-test sensitivity studies and participated in AB-testing strategy development for Risks department',
+      'Performed Monte Carlo stress tests on the retail credit portfolio',
     ],
     more: `
 ## Risk-Neutral Pricing via Randomised A/B Testing
