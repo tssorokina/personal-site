@@ -6,7 +6,7 @@ const data = [
     link: 'https://www.tse-fr.eu/master-mathematics-and-economic-decision',
     year: 'Sep 2023 – Nov 2025',
     location: 'Toulouse, France',
-    gpa: '15.0',
+    gpa: '15.6',
     gpa_scale: '20.0',
     description: [
       { text: 'merit-based Eiffel Excellence Scholarship;', link: 'https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence', description: 'French government scholarship for international students' },
